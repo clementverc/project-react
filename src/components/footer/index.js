@@ -8,7 +8,7 @@ class Footer extends Component {
           <div className="col-md-12">
             &copy;
             {new Date().getFullYear()}
-             Copyright: Test
+             Copyright: A2ROO
           </div>
         </div>
       </div>
