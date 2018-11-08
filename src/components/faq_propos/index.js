@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 
-class Footer extends Component {
+class FaqPropos extends Component {
   render() {
     return (
-      <div className="footer">
+      <div className="container">
         <div className="row">
           <div className="col-md-12">
-             Copyright: A2ROO
+            &copy;
+            {new Date().getFullYear()}
+             Copyright: faq
           </div>
         </div>
       </div>
@@ -14,4 +16,4 @@ class Footer extends Component {
   }
 }
 
-export default Footer
+export default FaqPropos

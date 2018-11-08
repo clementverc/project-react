@@ -16,6 +16,7 @@ import Footer from './components/footer'
 
 const Index = () => (
   <div>
+    <Header />
     <div className="container">
       <h1>BODY</h1>
       <h3>FontAwesomeIcon :</h3>
@@ -23,9 +24,8 @@ const Index = () => (
       <FontAwesomeIcon icon={faCoffee} />
       <FontAwesomeIcon icon={faSearch} />
     </div>
+    <Footer />
   </div>
 )
 
-ReactDOM.render(<Header />, document.getElementById('header'))
 ReactDOM.render(<Index />, document.getElementById('index'))
-ReactDOM.render(<Footer />, document.getElementById('footer'))
