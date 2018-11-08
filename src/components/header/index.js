@@ -1,45 +1,38 @@
 import React, { Component } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 class Header extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="/">Projet A2ROO</a>
+        <Link className="navbar-brand" to="/">Projet A2ROO</Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
-
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="/">
-                Home
-                <span className="sr-only">(current)</span>
-              </a>
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+              Les Modèles
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">Mon Espace</a>
+              <Link className="nav-link" to="/permis">Les Permis Moto</Link>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
+              <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Nous Contacter
+              </Link>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="/">Action</a>
-                <a className="dropdown-item" href="/">Another action</a>
+                <Link className="dropdown-item" to="/">Proposer un modèle non présent</Link>
                 <div className="dropdown-divider" />
-                <a className="dropdown-item" href="/">Something else here</a>
+                <Link className="dropdown-item" to="/">Autre demande</Link>
               </div>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Mon Espace</Link>
+            </li>
           </ul>
-          <form className="form-inline my-2 my-lg-0">
-            <input className="form-control mr-sm-2" type="search" placeholder="Rechercher un modèle" aria-label="Search" />
-            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-              <FontAwesomeIcon icon={faSearch} />
-            </button>
-          </form>
         </div>
       </nav>
     )

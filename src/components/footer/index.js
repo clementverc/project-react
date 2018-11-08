@@ -1,15 +1,20 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class Footer extends Component {
   render() {
     return (
-      <div className="footer">
-        <div className="row">
-          <div className="col-md-12">
-             Copyright: A2ROO
+      <footer>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <Link to="/FaqPropos">FAQ / A Propos</Link>
+              - Copyright: A2ROO -
+              <Link to="/">Nous Contacter</Link>
+            </div>
           </div>
         </div>
-      </div>
+      </footer>
     )
   }
 }

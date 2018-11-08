@@ -19,6 +19,7 @@
   },
   "rules": {
     "import/extensions": "off",
+    "max-len": ["error", { "code": 50000 }],
     "import/no-extraneous-dependencies": "off",
     "import/no-unresolved": "off",
     "comma-dangle": [2, "never"],
