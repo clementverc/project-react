@@ -27,12 +27,12 @@ body {
         
     }
 
-    .panel-title {
+    .mb-0 {
         font-size: 14px;
         color: #fff;
     }
 
-    .panel-title > a {
+    .mb-0 > a {
         display: block;
         text-align: center;
         padding: 15px;
@@ -55,9 +55,8 @@ a:visited , a:link, a:hover, a:active{
 footer {
     position: absolute;
     bottom: 0;
-    margin-top: 10%;
-    max-height: 40px;
-	width: 100%;
+ 	width: 100%;
     color: #FFFFFF;
     text-align: center;
+    
 }

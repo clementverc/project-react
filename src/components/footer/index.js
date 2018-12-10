@@ -5,15 +5,9 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <Link to="/FaqPropos">FAQ / A Propos</Link>
-              - Copyright: A2ROO -
-              <Link to="/">Nous Contacter</Link>
-            </div>
-          </div>
-        </div>
+        <Link to="/FaqPropos">FAQ / A Propos</Link>
+        - Copyright: A2ROO -
+        <Link to="/">Nous Contacter</Link>
       </footer>
     )
   }

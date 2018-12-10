@@ -29,6 +29,7 @@
     "no-nested-ternary": "off",
     "semi": ["error", "never"],
     "import/prefer-default-export" : "off",
+    "react/destructuring-assignment": [true, { "extensions": [".jsx"] }],
     "react/jsx-filename-extension": ["error", {"extensions": [".js", ".jsx"] }],
     "react/jsx-boolean-value": 0,
     "react/prop-types": 0,

@@ -5,80 +5,78 @@ import { faPlusCircle } from '@fortawesome/fontawesome-free-brands'
 class Permis extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-          <div className="panel panel-default">
-            <div className="panel-heading" role="tab" id="headingOne">
-              <h4 className="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  <FontAwesomeIcon icon={faPlusCircle} />
-                  Permis A
-                </a>
-              </h4>
-            </div>
-            <div id="collapseOne" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-              <div className="panel-body">
-                <h4>Le permis A permet de conduire :</h4>
-                <p>-Une moto, avec ou sans side-car, quelle que soit sa puissance.</p>
-                <p>-Un 3 roues, quelle que soit sa puissance.</p>
-                <h4>Comment l&apos;obtenir ?</h4>
-                <p>Pour obtenir la catégorie A du permis de conduire, vous devez étre titulaire de la catégorie A2 depuis au moins 2 ans et avoir suivi une formation de 7 heures avec succès.</p>
-                <h4>La formation :</h4>
-                <p>Le but de cette formation est de vous adapter à un nouveau véhicule et de vous amener à une pratique sécuritaire de la conduite d&apos;une moto de plus de 35 kilowatts (kw).</p>
-                <h4>La formation est composée en trois parties:</h4>
-                <p>-Une sequence théorique de 2 heures,</p>
-                <p>-Une sequence pratique hors circulation de 2 heures,</p>
-                <p>-Une sequence pratique en circulation de 3 heures.</p>
-              </div>
+      <div id="accordion">
+        <div className="card">
+          <div className="card-header" id="headingOne">
+            <h4 className="mb-0">
+              <a className="btn btn-link" data-toggle="collapse" type="button" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <FontAwesomeIcon icon={faPlusCircle} />
+                Permis A
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div className="card-body">
+              <h4>Le permis A permet de conduire :</h4>
+              <p>-Une moto, avec ou sans side-car, quelle que soit sa puissance.</p>
+              <p>-Un 3 roues, quelle que soit sa puissance.</p>
+              <h4>Comment l&apos;obtenir ?</h4>
+              <p>Pour obtenir la catégorie A du permis de conduire, vous devez étre titulaire de la catégorie A2 depuis au moins 2 ans et avoir suivi une formation de 7 heures avec succès.</p>
+              <h4>La formation :</h4>
+              <p>Le but de cette formation est de vous adapter à un nouveau véhicule et de vous amener à une pratique sécuritaire de la conduite d&apos;une moto de plus de 35 kilowatts (kw).</p>
+              <h4>La formation est composée en trois parties:</h4>
+              <p>-Une sequence théorique de 2 heures,</p>
+              <p>-Une sequence pratique hors circulation de 2 heures,</p>
+              <p>-Une sequence pratique en circulation de 3 heures.</p>
             </div>
           </div>
-          <div className="panel panel-default">
-            <div className="panel-heading" role="tab" id="headingTwo">
-              <h2 className="panel-title">
-                <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <FontAwesomeIcon icon={faPlusCircle} />
-                  Permis A2
-                </a>
-              </h2>
-            </div>
-            <div id="collapseTwo" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-              <div className="panel-body">
-                <h4>Le permis A2 permet de conduire :</h4>
-                <p>-Une moto (avec ou sans side-car), dont la puissance n&apos;excède pas 35 kilowatts (47,5 ch) et dont le rapport puissance/poids n&apos;excède pas 0,2 kw par kilogramme,</p>
-                <p>-Un 3 roues d&apos;une puissance maximum de 15 kw.</p>
-                <h4>Comment l&apos;obtenir ?</h4>
-                <p>-Vous devez avoir au moins 18 ans.</p>
-                <p>-Posséder l&apos;ASSR ou l&apos;ASR.</p>
-                <p>Le passage du permis</p>
-                <p>Vous devez d&apos;abord passer avec succès l&apos;épreuve théorique générale, le code.</p>
-                <p>Ensuite vient la partie pratique avec deux épreuves (une épreuve hors circulation (HC) et une épreuve en circulation (CIR):</p>
-                <p>L&apos;inspecteur commence à chaque fois par vérifier votre identité.</p>
-                <h4>&Eacute;preuve hors circulation(plateau)</h4>
-                <p>L&apos;épreuve HC dure 17 minutes et 30 secondes. Elle permet de vérifier que vous avez une ma&icirc; trise et une connaissance suffisantes de votre moto de catégorie A2 pour rouler en sécurité.</p>
-                <p>Vous devez avoir satisfait à l&apos;épreuve HC pour passer l&apos;épreuve en circulation.</p>
-                <p>&Agrave; partir de la date de réussite, vous conservez le bénéfice de cette épreuve HC pour 5 épreuves CIR pendant 3 ans, sous réserve de la validité du code.</p>
-                <h4>&Eacute;preuve en circulation</h4>
-                <p>Pour passer la conduite, vous devez avoir les équipements obligatoires (casque homologué, gants, blouson et pantalon ou combinaison, bottes ou chaussures montantes).</p>
-                <p>L&apos;épreuve CIR dure 35 minutes.</p>
-                <h4>Elle permet de vérifier que vous :</h4>
-                <p>-respectez le code de la route,</p>
-                <p>-pouvez circuler en sécurité pour vous et les autres usagers des voies publiques,</p>
-                <p>-ma&icirc;trisez les commandes et la manipulation du véhicule,</p>
-                <p>-&ecirc;tes suffisamment autonome dans la réalisation du trajet.</p>
-              </div>
+        </div>
+        <div className="card">
+          <div className="card-header" id="headingTwo">
+            <h2 className="mb-0">
+              <a className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <FontAwesomeIcon icon={faPlusCircle} />
+                Permis A2
+              </a>
+            </h2>
+          </div>
+          <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div className="card-body">
+              <h4>Le permis A2 permet de conduire :</h4>
+              <p>-Une moto (avec ou sans side-car), dont la puissance n&apos;excède pas 35 kilowatts (47,5 ch) et dont le rapport puissance/poids n&apos;excède pas 0,2 kw par kilogramme,</p>
+              <p>-Un 3 roues d&apos;une puissance maximum de 15 kw.</p>
+              <h4>Comment l&apos;obtenir ?</h4>
+              <p>-Vous devez avoir au moins 18 ans.</p>
+              <p>-Posséder l&apos;ASSR ou l&apos;ASR.</p>
+              <p>Le passage du permis</p>
+              <p>Vous devez d&apos;abord passer avec succès l&apos;épreuve théorique générale, le code.</p>
+              <p>Ensuite vient la partie pratique avec deux épreuves (une épreuve hors circulation (HC) et une épreuve en circulation (CIR):</p>
+              <p>L&apos;inspecteur commence à chaque fois par vérifier votre identité.</p>
+              <h4>&Eacute;preuve hors circulation(plateau)</h4>
+              <p>L&apos;épreuve HC dure 17 minutes et 30 secondes. Elle permet de vérifier que vous avez une ma&icirc; trise et une connaissance suffisantes de votre moto de catégorie A2 pour rouler en sécurité.</p>
+              <p>Vous devez avoir satisfait à l&apos;épreuve HC pour passer l&apos;épreuve en circulation.</p>
+              <p>&Agrave; partir de la date de réussite, vous conservez le bénéfice de cette épreuve HC pour 5 épreuves CIR pendant 3 ans, sous réserve de la validité du code.</p>
+              <h4>&Eacute;preuve en circulation</h4>
+              <p>Pour passer la conduite, vous devez avoir les équipements obligatoires (casque homologué, gants, blouson et pantalon ou combinaison, bottes ou chaussures montantes).</p>
+              <p>L&apos;épreuve CIR dure 35 minutes.</p>
+              <h4>Elle permet de vérifier que vous :</h4>
+              <p>-respectez le code de la route,</p>
+              <p>-pouvez circuler en sécurité pour vous et les autres usagers des voies publiques,</p>
+              <p>-ma&icirc;trisez les commandes et la manipulation du véhicule,</p>
+              <p>-&ecirc;tes suffisamment autonome dans la réalisation du trajet.</p>
             </div>
           </div>
-          <div className="panel panel-default">
-            <div className="panel-heading" role="tab" id="headingThree">
-              <h2 className="panel-title">
-                <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <div className="card">
+            <div className="card-header" id="headingThree">
+              <h2 className="mb-0">
+                <a className="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   <FontAwesomeIcon icon={faPlusCircle} />
                   Permis A1
                 </a>
               </h2>
             </div>
-            <div id="collapseThree" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div className="panel-body">
+            <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div className="card-body">
                 <h4>Le permis A1 permet de conduire :</h4>
                 <p>-Une moto légère (avec ou sans side-car) d&apos;une cylindrée maximale de 125 cm &sup3;, d&apos;une puissance n&apos;excédant pas 11 kilowatts et dont le rapport puissance/ poids ne dépasse pas 0,1 kilowatt par kilogramme,</p>
                 <p>-Un 3 roues d&apos;une puissance maximale de 15 kilowatts.</p>
@@ -101,17 +99,17 @@ class Permis extends Component {
               </div>
             </div>
           </div>
-          <div className="panel panel-default">
-            <div className="panel-heading" role="tab" id="headingFour">
-              <h4 className="panel-title">
-                <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <div className="card">
+            <div className="card-header" id="headingFour">
+              <h4 className="mb-0">
+                <a className="collapsed" role="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   <FontAwesomeIcon icon={faPlusCircle} />
                   Permis AM / BSR
                 </a>
               </h4>
             </div>
-            <div id="collapseFour" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-              <div className="panel-body">
+            <div id="collapseFour" className="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div className="card-body">
                 <h5>Le BSR (ou la catégorie AM du permis de conduire) permet de conduire dès l&apos;&acirc;ge de 14 ans :</h5>
                 <p>un cyclomoteur d&apos;une cylindrée de 50 cm&sup3; maximum (moteur à combustion interne) ou d&apos;une puissance maximale de 4 kW et qui ne dépasse pas 45 km/h de vitesse, ou un quadricycle léger à moteur d&apos;une puissance maximale de 4kw (mini-voitures classNameées &quot;voiturettes&quot; ou quads dont la cylindrée n&apos;excède pas 50cm&sup3;) et qui ne dépasse pas 45 km/h de vitesse.</p>
                 <p>Le permis AM n&apos;est pas soumis au barème de points comme les autres permis de conduire.</p>
