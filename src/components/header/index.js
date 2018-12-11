@@ -24,8 +24,6 @@ class Header extends Component {
                 Nous Contacter
               </Link>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link className="dropdown-item" to="/">Proposer un modèle non présent</Link>
-                <div className="dropdown-divider" />
                 <Link className="dropdown-item" to="/contact">Autre demande</Link>
               </div>
             </li>
