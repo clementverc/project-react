@@ -6,8 +6,8 @@ class Footer extends Component {
     return (
       <footer>
         <Link to="/FaqPropos">FAQ / A Propos</Link>
-        - Copyright: A2ROO -
-        <Link to="/">Nous Contacter</Link>
+        - Copyright: VERCUCQUE Clément -
+        {new Date().getFullYear()}
       </footer>
     )
   }
