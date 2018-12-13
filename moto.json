@@ -1,0 +1,1081 @@
+[
+{
+    "type": "header",
+    "version": "4.7.4",
+    "comment": "Export to JSON plugin for PHPMyAdmin"
+},
+{
+    "type": "database",
+    "name": "moto"
+},
+{
+    "type": "table",
+    "name": "builder",
+    "database": "moto",
+    "data": 
+[
+{
+    "id": "1",
+    "name": "Adiva"
+},
+{
+    "id": "2",
+    "name": "Adly"
+},
+{
+    "id": "3",
+    "name": "Aeon"
+},
+{
+    "id": "4",
+    "name": "Ajp"
+},
+{
+    "id": "5",
+    "name": "Alta Motors"
+},
+{
+    "id": "6",
+    "name": "Aprilia"
+},
+{
+    "id": "7",
+    "name": "Arctic Cat"
+},
+{
+    "id": "8",
+    "name": "As Motors"
+},
+{
+    "id": "9",
+    "name": "Askoll"
+},
+{
+    "id": "10",
+    "name": "Avinton"
+},
+{
+    "id": "11",
+    "name": "Axr"
+},
+{
+    "id": "12",
+    "name": "Bajaj"
+},
+{
+    "id": "13",
+    "name": "Baotian"
+},
+{
+    "id": "14",
+    "name": "Barigo"
+},
+{
+    "id": "15",
+    "name": "Barossa"
+},
+{
+    "id": "16",
+    "name": "Bashan"
+},
+{
+    "id": "17",
+    "name": "Beeline"
+},
+{
+    "id": "18",
+    "name": "Benelli"
+},
+{
+    "id": "19",
+    "name": "Beta"
+},
+{
+    "id": "20",
+    "name": "Bfg"
+},
+{
+    "id": "21",
+    "name": "Big Bear Choppers"
+},
+{
+    "id": "22",
+    "name": "Big Dog"
+},
+{
+    "id": "23",
+    "name": "Bimota"
+},
+{
+    "id": "24",
+    "name": "Black Star"
+},
+{
+    "id": "25",
+    "name": "Blaney"
+},
+{
+    "id": "26",
+    "name": "Blata"
+},
+{
+    "id": "27",
+    "name": "Bmw"
+},
+{
+    "id": "28",
+    "name": "Bombardier"
+},
+{
+    "id": "29",
+    "name": "Borelli"
+},
+{
+    "id": "30",
+    "name": "Boss Hoss"
+},
+{
+    "id": "31",
+    "name": "Boxer"
+},
+{
+    "id": "32",
+    "name": "Brixton"
+},
+{
+    "id": "33",
+    "name": "Bsa"
+},
+{
+    "id": "34",
+    "name": "Buell"
+},
+{
+    "id": "35",
+    "name": "Bullit"
+},
+{
+    "id": "36",
+    "name": "Bultaco"
+},
+{
+    "id": "37",
+    "name": "Cagiva"
+},
+{
+    "id": "38",
+    "name": "Can Am"
+},
+{
+    "id": "39",
+    "name": "Ccm"
+},
+{
+    "id": "40",
+    "name": "Cf Moto"
+},
+{
+    "id": "41",
+    "name": "Ch Racing"
+},
+{
+    "id": "42",
+    "name": "Chunlan"
+},
+{
+    "id": "43",
+    "name": "Clipic"
+},
+{
+    "id": "44",
+    "name": "Confederate"
+},
+{
+    "id": "45",
+    "name": "Conti Motors"
+},
+{
+    "id": "46",
+    "name": "Cpi"
+},
+{
+    "id": "47",
+    "name": "Cr&s"
+},
+{
+    "id": "48",
+    "name": "Cz"
+},
+{
+    "id": "49",
+    "name": "Daelim"
+},
+{
+    "id": "50",
+    "name": "Derbi"
+},
+{
+    "id": "51",
+    "name": "Di Blasi"
+},
+{
+    "id": "52",
+    "name": "Diapason"
+},
+{
+    "id": "53",
+    "name": "Dniepr"
+},
+{
+    "id": "54",
+    "name": "Ducati"
+},
+{
+    "id": "55",
+    "name": "E-max"
+},
+{
+    "id": "56",
+    "name": "E-ton"
+},
+{
+    "id": "57",
+    "name": "Easy Trikes"
+},
+{
+    "id": "58",
+    "name": "Eccity"
+},
+{
+    "id": "59",
+    "name": "Enfield"
+},
+{
+    "id": "60",
+    "name": "Eurocka"
+},
+{
+    "id": "61",
+    "name": "Evt"
+},
+{
+    "id": "62",
+    "name": "Explorer"
+},
+{
+    "id": "63",
+    "name": "Exy Racing"
+},
+{
+    "id": "64",
+    "name": "Factory Bike"
+},
+{
+    "id": "65",
+    "name": "Fantic Motor"
+},
+{
+    "id": "66",
+    "name": "Faspider"
+},
+{
+    "id": "67",
+    "name": "Fischer"
+},
+{
+    "id": "68",
+    "name": "Fitro"
+},
+{
+    "id": "69",
+    "name": "Gilera"
+},
+{
+    "id": "70",
+    "name": "Ginomoto"
+},
+{
+    "id": "71",
+    "name": "Goes"
+},
+{
+    "id": "72",
+    "name": "Goodyear"
+},
+{
+    "id": "73",
+    "name": "Gowinn"
+},
+{
+    "id": "74",
+    "name": "Guoben"
+},
+{
+    "id": "75",
+    "name": "Hagglunds"
+},
+{
+    "id": "76",
+    "name": "Hanway"
+},
+{
+    "id": "77",
+    "name": "Harley Davidson"
+},
+{
+    "id": "78",
+    "name": "Headbanger"
+},
+{
+    "id": "79",
+    "name": "Heroway"
+},
+{
+    "id": "80",
+    "name": "Hesketh"
+},
+{
+    "id": "81",
+    "name": "Highland"
+},
+{
+    "id": "82",
+    "name": "Hm"
+},
+{
+    "id": "83",
+    "name": "Hm Honda"
+},
+{
+    "id": "84",
+    "name": "Honda"
+},
+{
+    "id": "85",
+    "name": "Hooper"
+},
+{
+    "id": "86",
+    "name": "Horex"
+},
+{
+    "id": "87",
+    "name": "Hrd"
+},
+{
+    "id": "88",
+    "name": "Husaberg"
+},
+{
+    "id": "89",
+    "name": "Husqvarna"
+},
+{
+    "id": "90",
+    "name": "Hyosung"
+},
+{
+    "id": "91",
+    "name": "Hytrack"
+},
+{
+    "id": "92",
+    "name": "Indian"
+},
+{
+    "id": "93",
+    "name": "Italjet"
+},
+{
+    "id": "94",
+    "name": "Italvel"
+},
+{
+    "id": "95",
+    "name": "Jawa"
+},
+{
+    "id": "96",
+    "name": "Jawa Speedway"
+},
+{
+    "id": "97",
+    "name": "Jiajue"
+},
+{
+    "id": "98",
+    "name": "Jianshe"
+},
+{
+    "id": "99",
+    "name": "Jikov"
+},
+{
+    "id": "100",
+    "name": "Jincheng"
+},
+{
+    "id": "101",
+    "name": "Jinlun"
+},
+{
+    "id": "102",
+    "name": "Jonway"
+},
+{
+    "id": "103",
+    "name": "Kanuni"
+},
+{
+    "id": "104",
+    "name": "Kawasaki"
+},
+{
+    "id": "105",
+    "name": "Keeway"
+},
+{
+    "id": "106",
+    "name": "Kreidler"
+},
+{
+    "id": "107",
+    "name": "Ktm"
+},
+{
+    "id": "108",
+    "name": "Kymco"
+},
+{
+    "id": "109",
+    "name": "Laverda"
+},
+{
+    "id": "110",
+    "name": "Lem"
+},
+{
+    "id": "111",
+    "name": "Leonart"
+},
+{
+    "id": "112",
+    "name": "Lifan"
+},
+{
+    "id": "113",
+    "name": "Ligier"
+},
+{
+    "id": "114",
+    "name": "Linhai"
+},
+{
+    "id": "115",
+    "name": "Lml"
+},
+{
+    "id": "116",
+    "name": "Loisir 2r"
+},
+{
+    "id": "117",
+    "name": "Magni"
+},
+{
+    "id": "118",
+    "name": "Magpower"
+},
+{
+    "id": "119",
+    "name": "Maico"
+},
+{
+    "id": "120",
+    "name": "Malaguti"
+},
+{
+    "id": "121",
+    "name": "Manet Korado"
+},
+{
+    "id": "122",
+    "name": "Masai"
+},
+{
+    "id": "123",
+    "name": "Mash"
+},
+{
+    "id": "124",
+    "name": "Matchless"
+},
+{
+    "id": "125",
+    "name": "Matra"
+},
+{
+    "id": "126",
+    "name": "Maoench"
+},
+{
+    "id": "127",
+    "name": "Mbk"
+},
+{
+    "id": "128",
+    "name": "Mecatecno"
+},
+{
+    "id": "129",
+    "name": "Megelli"
+},
+{
+    "id": "130",
+    "name": "Metrakit"
+},
+{
+    "id": "131",
+    "name": "Mh"
+},
+{
+    "id": "132",
+    "name": "Midual"
+},
+{
+    "id": "133",
+    "name": "Minico"
+},
+{
+    "id": "134",
+    "name": "Mistral"
+},
+{
+    "id": "135",
+    "name": "Monnier"
+},
+{
+    "id": "136",
+    "name": "Montesa"
+},
+{
+    "id": "137",
+    "name": "Mopex"
+},
+{
+    "id": "138",
+    "name": "Mors"
+},
+{
+    "id": "139",
+    "name": "Moto Guzzi"
+},
+{
+    "id": "140",
+    "name": "Moto Morini"
+},
+{
+    "id": "141",
+    "name": "Moto Zeta"
+},
+{
+    "id": "142",
+    "name": "Motobecane"
+},
+{
+    "id": "143",
+    "name": "Motrac"
+},
+{
+    "id": "144",
+    "name": "Msa By"
+},
+{
+    "id": "145",
+    "name": "Mujoo"
+},
+{
+    "id": "146",
+    "name": "Mv Agusta"
+},
+{
+    "id": "147",
+    "name": "Mz"
+},
+{
+    "id": "148",
+    "name": "Mz Kanuni"
+},
+{
+    "id": "149",
+    "name": "Ncr"
+},
+{
+    "id": "150",
+    "name": "Neco"
+},
+{
+    "id": "151",
+    "name": "Niu"
+},
+{
+    "id": "152",
+    "name": "Norton"
+},
+{
+    "id": "153",
+    "name": "Nytrox"
+},
+{
+    "id": "154",
+    "name": "Orcal"
+},
+{
+    "id": "155",
+    "name": "Ossa"
+},
+{
+    "id": "156",
+    "name": "Oural"
+},
+{
+    "id": "157",
+    "name": "Pantera"
+},
+{
+    "id": "158",
+    "name": "Paton"
+},
+{
+    "id": "159",
+    "name": "Peugeot"
+},
+{
+    "id": "160",
+    "name": "Pgo"
+},
+{
+    "id": "161",
+    "name": "Piaggio"
+},
+{
+    "id": "162",
+    "name": "Pink Mobility"
+},
+{
+    "id": "163",
+    "name": "Polaris"
+},
+{
+    "id": "164",
+    "name": "Polini"
+},
+{
+    "id": "165",
+    "name": "Praga"
+},
+{
+    "id": "166",
+    "name": "Qingqi"
+},
+{
+    "id": "167",
+    "name": "Quadro"
+},
+{
+    "id": "168",
+    "name": "Razzo"
+},
+{
+    "id": "169",
+    "name": "Regal Raptor"
+},
+{
+    "id": "170",
+    "name": "Renault"
+},
+{
+    "id": "171",
+    "name": "Revatto"
+},
+{
+    "id": "172",
+    "name": "Rewaco"
+},
+{
+    "id": "173",
+    "name": "Ride"
+},
+{
+    "id": "174",
+    "name": "Rieju"
+},
+{
+    "id": "175",
+    "name": "Roadsign"
+},
+{
+    "id": "176",
+    "name": "Roxon"
+},
+{
+    "id": "177",
+    "name": "Royal Enfield"
+},
+{
+    "id": "178",
+    "name": "Rumi"
+},
+{
+    "id": "179",
+    "name": "Sachs"
+},
+{
+    "id": "180",
+    "name": "Sampo"
+},
+{
+    "id": "181",
+    "name": "Saxon"
+},
+{
+    "id": "182",
+    "name": "Scomadi"
+},
+{
+    "id": "183",
+    "name": "Scorpa"
+},
+{
+    "id": "184",
+    "name": "Select Up"
+},
+{
+    "id": "185",
+    "name": "Sherco"
+},
+{
+    "id": "186",
+    "name": "Sherco By Bultaco"
+},
+{
+    "id": "187",
+    "name": "Side Bike"
+},
+{
+    "id": "188",
+    "name": "Sky Team"
+},
+{
+    "id": "189",
+    "name": "Smc"
+},
+{
+    "id": "190",
+    "name": "Solex"
+},
+{
+    "id": "191",
+    "name": "Spigaou"
+},
+{
+    "id": "192",
+    "name": "Suzuki"
+},
+{
+    "id": "193",
+    "name": "Sweet Elec"
+},
+{
+    "id": "194",
+    "name": "Swm"
+},
+{
+    "id": "195",
+    "name": "Sym"
+},
+{
+    "id": "196",
+    "name": "Tendance"
+},
+{
+    "id": "197",
+    "name": "Tgb"
+},
+{
+    "id": "198",
+    "name": "Tm"
+},
+{
+    "id": "199",
+    "name": "Tnt Motor"
+},
+{
+    "id": "200",
+    "name": "Tomos"
+},
+{
+    "id": "201",
+    "name": "Triton"
+},
+{
+    "id": "202",
+    "name": "Triumph"
+},
+{
+    "id": "203",
+    "name": "Ural"
+},
+{
+    "id": "204",
+    "name": "Ural\/irbit Motorcycle Plant"
+},
+{
+    "id": "205",
+    "name": "Vastro"
+},
+{
+    "id": "206",
+    "name": "Vectrix"
+},
+{
+    "id": "207",
+    "name": "Vertemati"
+},
+{
+    "id": "208",
+    "name": "Victory"
+},
+{
+    "id": "209",
+    "name": "Volta"
+},
+{
+    "id": "210",
+    "name": "Vor"
+},
+{
+    "id": "211",
+    "name": "Voxan"
+},
+{
+    "id": "212",
+    "name": "Xr Dall Ara"
+},
+{
+    "id": "213",
+    "name": "Yamaha"
+},
+{
+    "id": "214",
+    "name": "Yazuka"
+},
+{
+    "id": "215",
+    "name": "Ycf"
+},
+{
+    "id": "216",
+    "name": "Yiying"
+},
+{
+    "id": "217",
+    "name": "Zero"
+},
+{
+    "id": "218",
+    "name": "Zhongyu"
+},
+{
+    "id": "219",
+    "name": "Znen"
+},
+{
+    "id": "220",
+    "name": "Zoncq-jingchen"
+},
+{
+    "id": "221",
+    "name": "Zongshen"
+},
+{
+    "id": "222",
+    "name": "Zpmoto"
+}
+]
+
+}
+,{
+    "type": "table",
+    "name": "categories",
+    "database": "moto",
+    "data": 
+[
+{
+    "id": "1",
+    "name": "ATC"
+},
+{
+    "id": "2",
+    "name": "Collection"
+},
+{
+    "id": "3",
+    "name": "Cross"
+},
+{
+    "id": "4",
+    "name": "Custom"
+},
+{
+    "id": "5",
+    "name": "Enduro"
+},
+{
+    "id": "6",
+    "name": "Grand Tourisme (GT)"
+},
+{
+    "id": "7",
+    "name": "N\u00e9o-Retro"
+},
+{
+    "id": "8",
+    "name": "Roadster"
+},
+{
+    "id": "9",
+    "name": "Routi\u00e8re"
+},
+{
+    "id": "10",
+    "name": "Side-Car"
+},
+{
+    "id": "11",
+    "name": "Sportive"
+},
+{
+    "id": "12",
+    "name": "Spyder"
+},
+{
+    "id": "13",
+    "name": "Supermotard"
+},
+{
+    "id": "14",
+    "name": "Trails"
+},
+{
+    "id": "15",
+    "name": "Trial"
+},
+{
+    "id": "16",
+    "name": "Trike"
+},
+{
+    "id": "17",
+    "name": "Utilitaire"
+}
+]
+
+}
+,{
+    "type": "table",
+    "name": "fos_user",
+    "database": "moto",
+    "data": 
+[
+{
+    "id": "1",
+    "username": "clement",
+    "username_canonical": "clement",
+    "email": "adresse@mail.fr",
+    "email_canonical": "adresse@mail.fr",
+    "enabled": "1",
+    "salt": null,
+    "password": "$2y$13$r81kH0kFEcF2ZAanDVnq2.0hDLCMJ4Zi8XR6x283q9EePWn0P7qrS",
+    "last_login": "2018-02-10 14:59:01",
+    "confirmation_token": null,
+    "password_requested_at": null,
+    "roles": "a:1:{i:0;s:10:\"ROLE_ADMIN\";}"
+}
+]
+
+}
+,{
+    "type": "table",
+    "name": "license",
+    "database": "moto",
+    "data": 
+[
+{
+    "id": "1",
+    "name": "A"
+},
+{
+    "id": "2",
+    "name": "A2"
+},
+{
+    "id": "3",
+    "name": "A1"
+},
+{
+    "id": "4",
+    "name": "AM\/BSR"
+},
+{
+    "id": "5",
+    "name": "B1"
+},
+{
+    "id": "6",
+    "name": "B+2ans"
+}
+]
+
+}
+,{
+    "type": "table",
+    "name": "modeles",
+    "database": "moto",
+    "data": 
+[
+
+]
+
+}
+,{
+    "type": "table",
+    "name": "modeles_categories",
+    "database": "moto",
+    "data": 
+[
+
+]
+
+}
+,{
+    "type": "table",
+    "name": "modeles_licenses",
+    "database": "moto",
+    "data": 
+[
+
+]
+
+}
+,{
+    "type": "table",
+    "name": "modeles_users",
+    "database": "moto",
+    "data": 
+[
+
+]
+
+}
+]
