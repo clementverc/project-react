@@ -1,14 +1,11 @@
 import React from 'react'
 
-const Article = ({ data }) => (
+const Results = ({ data }) => (
   <div>
     <table className="table table-hover">
       <thead>
         <tr>
-          <th>image</th>
           <th>titre</th>
-          <th>debut</th>
-          <th>fin</th>
           <th>ville</th>
           <th>adresse</th>
           <th>description</th>
@@ -17,15 +14,8 @@ const Article = ({ data }) => (
       <tbody>
         {data.map(item => (
           <tr key={item.id}>
-            <img className="floatLeft" src={item.image} alt="img-event" height="10%" width="10%" />
             <td>
               {`titre: ${item.title}`}
-            </td>
-            <td>
-              {`début: ${item.dateStart}`}
-            </td>
-            <td>
-              {`fin: ${item.dateEnd}`}
             </td>
             <td>
               {`ville: ${item.city}`}
@@ -43,4 +33,4 @@ const Article = ({ data }) => (
   </div>
 )
 
-export default Article
+export default Results

@@ -6,6 +6,8 @@ import Permis from './components/permis'
 import FaqPropos from './components/faq_propos'
 import Header from './components/header'
 import Footer from './components/footer'
+import Search from './components/search'
+import SimpleForm from './components/contact'
 
 class Routes extends Component {
   render() {
@@ -17,7 +19,9 @@ class Routes extends Component {
             <Switch>
               <Route path="/" component={HomePage} exact />
               <Route path="/permis" component={Permis} exact />
+              <Route path="/search" component={Search} />
               <Route path="/FaqPropos" component={FaqPropos} exact />
+              <Route path="/contact" component={SimpleForm} exact />
             </Switch>
             <Footer />
           </div>

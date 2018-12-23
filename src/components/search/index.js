@@ -2,13 +2,16 @@ import axios from 'axios'
 import React, { Component } from 'react'
 
 import initialState from './initial-state'
-import Article from './components/article'
+import Results from './components/results'
+import SearchBar from './components/search-bar'
+import mock from '../../mock/mock.json'
 
-class HomePage extends Component {
+class Search extends Component {
   constructor() {
     super()
 
     this.state = initialState
+    this.getValue = this.searchResult.bind(this)
   }
 
   /**
@@ -18,16 +21,27 @@ class HomePage extends Component {
    */
   getData() {
     const apiUrl = ''
-    // https://opendata.paris.fr/api/records/1.0/search/?dataset=evenements-a-paris&facet=placename&facet=department&facet=region&facet=city&facet=date_start&facet=date_end&facet=pricing_info'
+    // https://opendata.paris.fr/api/records/1.0/search/?dataset=evenements-a-paris&facet=placename&facet=department&facet=region&facet=city&facet=date_start&facet=date_end&facet=pricing_info`
 
     axios.get(apiUrl)
       .then((response) => {
+        this.state.data = this.formatEvents(response.data.records)
+
         this.setState({
           data: this.formatEvents(response.data.records)
         })
       })
       .catch(() => {
+        this.state.data = this.formatEvents(mock.data)
+
+        this.setState({
+          data: this.formatEvents(mock.data)
+        })
       })
+  }
+
+  searchResult(value) {
+    this.getData(value)
   }
 
   /**
@@ -40,10 +54,7 @@ class HomePage extends Component {
       id: event.recordid,
       address: event.fields.address,
       city: event.fields.city,
-      dateEnd: event.fields.date_end,
-      dateStart: event.fields.date_start,
       description: event.fields.description,
-      image: event.fields.image,
       title: event.fields.title
     }))
   }
@@ -53,13 +64,11 @@ class HomePage extends Component {
 
     return (
       <div>
-        <div className="container">
-          {this.getData()}
-          <Article data={data} />
-        </div>
+        <SearchBar searchResult={this.getValue} />
+        <Results data={data} />
       </div>
     )
   }
 }
 
-export default HomePage
+export default Search
