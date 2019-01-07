@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlusCircle } from '@fortawesome/fontawesome-free-brands'
 
 class Permis extends Component {
   render() {
@@ -11,7 +9,6 @@ class Permis extends Component {
             <div className="card-header" id="headingOne">
               <h2 className="mb-0">
                 <a className="collapsed" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  <FontAwesomeIcon icon={faPlusCircle} />
                   Permis A
                 </a>
               </h2>
@@ -36,7 +33,6 @@ class Permis extends Component {
             <div className="card-header" id="headingTwo">
               <h2 className="mb-0">
                 <a className="collapsed" role="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <FontAwesomeIcon icon={faPlusCircle} />
                   Permis A2
                 </a>
               </h2>
@@ -71,7 +67,6 @@ class Permis extends Component {
               <div className="card-header" id="headingThree">
                 <h2 className="mb-0">
                   <a className="collapsed" role="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <FontAwesomeIcon icon={faPlusCircle} />
                     Permis A1
                   </a>
                 </h2>
@@ -104,7 +99,6 @@ class Permis extends Component {
               <div className="card-header" id="headingFour">
                 <h2 className="mb-0">
                   <a className="collapsed" role="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    <FontAwesomeIcon icon={faPlusCircle} />
                     Permis AM / BSR
                   </a>
                 </h2>

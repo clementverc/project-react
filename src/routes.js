@@ -8,6 +8,8 @@ import Header from './components/header'
 import Footer from './components/footer'
 import Search from './components/search'
 import SimpleForm from './components/contact'
+import ModeleForm from './components/contact/modeleForm'
+import Login from './components/memberArea/login'
 
 class Routes extends Component {
   render() {
@@ -22,6 +24,8 @@ class Routes extends Component {
               <Route path="/search" component={Search} />
               <Route path="/FaqPropos" component={FaqPropos} exact />
               <Route path="/contact" component={SimpleForm} exact />
+              <Route path="/modeleForm" component={ModeleForm} exact />
+              <Route path="/memberArea" component={Login} exact />
             </Switch>
             <Footer />
           </div>

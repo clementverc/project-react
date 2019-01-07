@@ -5,36 +5,34 @@ const Article = ({ data }) => (
     <table className="table table-hover">
       <thead>
         <tr>
-          <th>image</th>
-          <th>titre</th>
-          <th>debut</th>
-          <th>fin</th>
-          <th>ville</th>
-          <th>adresse</th>
-          <th>description</th>
+          <th>id</th>
+          <th>name</th>
+          <th>permis</th>
+          <th>constructeur</th>
+          <th>cylindree</th>
+          <th>categorie</th>
         </tr>
       </thead>
       <tbody>
         {data.map(item => (
           <tr key={item.id}>
-            <img className="floatLeft" src={item.image} alt="img-event" height="10%" width="10%" />
             <td>
-              {`titre: ${item.title}`}
+              {`${item.id}`}
             </td>
             <td>
-              {`début: ${item.dateStart}`}
+              {`${item.name}`}
             </td>
             <td>
-              {`fin: ${item.dateEnd}`}
+              {`${item.permis}`}
             </td>
             <td>
-              {`ville: ${item.city}`}
+              {`${item.constructeur}`}
             </td>
             <td>
-              {`adresse: ${item.address}`}
+              {`${item.cylindree}`}
             </td>
             <td>
-              {`description: ${item.description}`}
+              {`${item.categorie}`}
             </td>
           </tr>
         ))}
