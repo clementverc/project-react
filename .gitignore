@@ -7,5 +7,5 @@ dist/
 moto.json
 webpack.config.js
 moto_db.sql
-mock/
-img/
+src/img/
+src/mock
