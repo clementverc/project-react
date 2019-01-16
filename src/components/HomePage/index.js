@@ -45,7 +45,43 @@ class HomePage extends Component {
     return (
       <div>
         <div className="container">
-          <Article data={data} />
+          <div className="row">
+            <div className="col-2">
+              <select>
+                <option value="grapefruit">Grapefruit</option>
+                <option value="lime">Lime</option>
+                <option selected value="coconut">Coconut</option>
+                <option value="mango">Mango</option>
+              </select>
+              <select>
+                <option value="grapefruit">Grapefruit</option>
+                <option value="lime">Lime</option>
+                <option selected value="coconut">Coconut</option>
+                <option value="mango">Mango</option>
+              </select>
+              <select>
+                <option value="grapefruit">Grapefruit</option>
+                <option value="lime">Lime</option>
+                <option selected value="coconut">Coconut</option>
+                <option value="mango">Mango</option>
+              </select>
+              <select>
+                <option value="grapefruit">Grapefruit</option>
+                <option value="lime">Lime</option>
+                <option selected value="coconut">Coconut</option>
+                <option value="mango">Mango</option>
+              </select>
+              <select>
+                <option value="grapefruit">Grapefruit</option>
+                <option value="lime">Lime</option>
+                <option selected value="coconut">Coconut</option>
+                <option value="mango">Mango</option>
+              </select>
+            </div>
+            <div className="col-8">
+              <Article data={data} />
+            </div>
+          </div>
         </div>
       </div>
     )
