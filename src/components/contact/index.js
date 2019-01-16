@@ -1,25 +1,36 @@
-import React, { Component } from 'react'
+import React from 'react'
+import {
+  Form,
+  Text,
+  TextArea
+} from 'react-form'
 
-class SimpleForm extends Component {
-  render() {
-    return (
-      <div className="container">
-        <form className="simpleform">
+const SimpleForm = () => (
+  <Form render={({
+    submitForm
+  }) => (
+    <div className="container text-center">
+      <h1>Contact Nous !</h1>
+      <form onSubmit={submitForm}>
+        <div className="row col-12">
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <h6>Nom (ou pseudo) : </h6>
-            <input type="text" placeholder="Name" required />
+            <h6>Nom : </h6>
+            <Text field="Name" placeholder="Pseudo or Name" required />
+          </div>
+          <div className="col-lg-6 col-md-6 col-sm-12">
             <h6>Email : </h6>
-            <input type="email" placeholder="Email" required />
+            <Text field="Email" placeholder="Email" required />
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12">
-            <h6>Votre Demande : </h6>
-            <input type="text" component="textarea" required />
-            <button type="submit">Envoyer</button>
-          </div>
-        </form>
-      </div>
-    )
-  }
-}
+        </div>
+        <div className="col-lg-12 col-md-12 col-sm-12">
+          <h6>Votre Demande : </h6>
+          <TextArea field="question" required />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  )}
+  />
+)
 
 export default SimpleForm

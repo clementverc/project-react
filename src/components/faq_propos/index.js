@@ -1,21 +1,41 @@
 import React, { Component } from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faAccusoft } from '@fortawesome/fontawesome-free-brands'
 
 class FaqPropos extends Component {
   render() {
     return (
       <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-             Copyright: faq
-            <h1>BODY</h1>
-            <h3>FontAwesomeIcon :</h3>
-            <FontAwesomeIcon icon={faAccusoft} />
-            <FontAwesomeIcon icon={faCoffee} />
-            <FontAwesomeIcon icon={faSearch} />
+        <div className="row justify-content-center">
+          <div className="col-8">
+            <h1>
+              FAQ
+              <FontAwesomeIcon icon={faAccusoft} />
+            </h1>
+            <h4>impetu Domitianum praecipitem</h4>
+            <p>Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu. iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.</p>
+            <h4>impetu Domitianum praecipitem</h4>
+            <p>Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu. iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.</p>
+            <h4>impetu Domitianum praecipitem</h4>
+            <p>Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu. iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.</p>
+            <h4>impetu Domitianum praecipitem</h4>
+            <p>Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu. iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.</p>
+            <h4>impetu Domitianum praecipitem</h4>
+            <p>Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu. iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.</p>
+            <h1>
+              Conditions utilisations
+              <FontAwesomeIcon icon={faAccusoft} />
+            </h1>
+            <p>Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu. iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.</p>
+            <h4>impetu Domitianum praecipitem</h4>
+            <p>Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu. iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.</p>
+            <h4>impetu Domitianum praecipitem</h4>
+            <p>Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu. iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.</p>
+            <h4>impetu Domitianum praecipitem</h4>
+            <p>Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu. iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.</p>
+            <h4>impetu Domitianum praecipitem</h4>
+            <p>Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu. iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.</p>
           </div>
         </div>
       </div>
