@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import HomePage from './components/HomePage'
-import Permis from './components/permis'
-import FaqPropos from './components/faq_propos'
-import Header from './components/header'
-import Footer from './components/footer'
-import Search from './components/search'
-import SimpleForm from './components/contact'
-import ModeleForm from './components/contact/modeleForm'
-import Login from './components/memberArea/login'
+import HomePage from './HomePage'
+import Permis from './permis'
+import FaqPropos from './faq_propos'
+import Header from './header'
+import Footer from './footer'
+import Search from './search'
+import SimpleForm from './contact'
+import ModeleForm from './contact/modeleForm'
+import Login from './memberArea/login'
 
 class Routes extends Component {
   render() {
