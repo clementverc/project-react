@@ -9,8 +9,9 @@ function registerValidSW(swUrl) {
   navigator.serviceWorker
     .register(swUrl)
     .then((registration) => {
-      registration.onupdatefound = () => {
-        const installingWorker = registration.installing
+      const registrationn = registration
+      registrationn.onupdatefound = () => {
+        const installingWorker = registrationn.installing
         installingWorker.onstatechange = () => {
           if (installingWorker.state === 'installed') {
             if (navigator.serviceWorker.controller) {

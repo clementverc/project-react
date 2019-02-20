@@ -86,9 +86,6 @@ class Header extends Component {
               </div>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/memberArea">
-                Mon Espace
-              </Link>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 {isAuthenticated ? authLinks : guestLinks}
               </div>

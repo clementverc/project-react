@@ -5,7 +5,7 @@ import setAuthToken from '../../setAuthToken'
 
 export const registerUser = (user, history) => (dispatch) => {
   axios.post('/api/users/register', user)
-    .then(res => history.push('/login'))
+    .then(() => history.push('/login'))
     .catch((err) => {
       dispatch({
         type: GET_ERRORS,
@@ -14,12 +14,10 @@ export const registerUser = (user, history) => (dispatch) => {
     })
 }
 
-export const setCurrentUser = (decoded) => {
-  return {
-    type: SET_CURRENT_USER,
-    payload: decoded
-  }
-}
+export const setCurrentUser = decoded => ({
+  type: SET_CURRENT_USER,
+  payload: decoded
+})
 
 export const loginUser = user => (dispatch) => {
   axios.post('/api/users/login', user)
