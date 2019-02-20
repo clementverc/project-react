@@ -1,0 +1,36 @@
+{
+    "modeles": [
+        {
+            "id": "1",
+            "name": "CBR500R",
+            "categorie": "Sportive",
+            "permis":"A2",
+            "cylindree": "500",
+            "constructeur":"Honda"
+        },
+        {
+            "id": "2",
+            "name": "CB500f",
+            "categorie": "Roadster",
+            "permis":"A2",
+            "cylindree": "500",
+            "constructeur":"Honda"
+        },
+        {
+            "id": "3",
+            "name": "sv650",
+            "categorie": "Sportive",
+            "permis":"A2 / A",
+            "cylindree": "650",
+            "constructeur":"Suzuki"
+        },
+        {
+            "id": "4",
+            "name": "MT07",
+            "categorie": "Roadster",
+            "permis":"A2 / A",
+            "cylindree": "698",
+            "constructeur":"Yamaha"
+        }
+    ]
+}
