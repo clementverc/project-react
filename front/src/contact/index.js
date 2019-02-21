@@ -1,32 +1,43 @@
 import React from 'react'
+import classnames from 'classnames'
 import {
-  Form,
-  Text,
-  TextArea
+  Form
 } from 'react-form'
 
 const SimpleForm = () => (
   <Form render={({
     submitForm
   }) => (
-    <div className="container text-center">
-      <h1>Contact Nous !</h1>
+    <div className="container" style={{ marginTop: '50px', width: '700px' }}>
+      <h2 style={{ marginBottom: '40px' }}>Contact Nous !</h2>
       <form onSubmit={submitForm}>
-        <div className="row col-12">
-          <div className="col-lg-6 col-md-6 col-sm-12">
-            <h6>Nom : </h6>
-            <Text field="Name" placeholder="Pseudo or Name" required />
-          </div>
-          <div className="col-lg-6 col-md-6 col-sm-12">
-            <h6>Email : </h6>
-            <Text field="Email" placeholder="Email" required />
-          </div>
+        <div className="form-group">
+          <input
+            type="text"
+            field="Name"
+            className={classnames('form-control form-control-lg')}
+            placeholder="Pseudo or Name"
+            required
+          />
         </div>
-        <div className="col-lg-12 col-md-12 col-sm-12">
+        <div className="form-group">
+          <input
+            type="email"
+            field="Email"
+            className={classnames('form-control form-control-lg')}
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div className="form-group">
           <h6>Votre Demande : </h6>
-          <TextArea field="question" className="SimpleFormQuestion" required />
+          <textarea
+            field="question"
+            className="form-control form-control-lg"
+            required
+          />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="btn btn-primary">Envoyer</button>
       </form>
     </div>
   )}
