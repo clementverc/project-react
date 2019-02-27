@@ -13,8 +13,8 @@ class Header extends Component {
   render() {
     const { isAuthenticated, user } = this.props.auth
     const authLinks = (
-      <ul className="navbar-nav ml-auto">
-        <a href="" className="nav-link" onClick={this.onLogout.bind(this)}>
+      <li className="navbar-nav ml-auto">
+        <a href="memberSpace" className="nav-link">
           <img
             src={user.avatar}
             alt={user.name}
@@ -22,17 +22,17 @@ class Header extends Component {
             className="rounded-circle"
             style={{ width: '25px', marginRight: '5px' }}
           />
-          Logout
+          Mon Espace
         </a>
-      </ul>
+        <a href="" className="nav-link" onClick={this.onLogout.bind(this)}>
+          Deco
+        </a>
+      </li>
     )
     const guestLinks = (
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <Link className="nav-link" to="/register">Sign Up</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/login">Sign In</Link>
+          <Link className="nav-link" to="/login">Mon Espace</Link>
         </li>
       </ul>
     )
@@ -96,10 +96,6 @@ class Header extends Component {
     )
   }
 }
-// Header.propTypes = {
-//   logoutUser: PropTypes.func.isRequired,
-//   auth: PropTypes.object.isRequired
-// }
 
 const mapStateToProps = state => ({
   auth: state.auth

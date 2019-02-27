@@ -4,7 +4,7 @@ import { GET_ERRORS, SET_CURRENT_USER } from './types'
 import setAuthToken from '../../setAuthToken'
 
 export const registerUser = (user, history) => (dispatch) => {
-  axios.post('/api/users/register', user)
+  axios.post('http://127.0.0.1:8080/api/users/register', user)
     .then(() => history.push('/login'))
     .catch((err) => {
       dispatch({
@@ -20,7 +20,7 @@ export const setCurrentUser = decoded => ({
 })
 
 export const loginUser = user => (dispatch) => {
-  axios.post('/api/users/login', user)
+  axios.post('http://127.0.0.1:8080/api/users/login', user)
     .then((res) => {
       const { token } = res.data
       localStorage.setItem('jwtToken', token)
@@ -40,5 +40,5 @@ export const logoutUser = history => (dispatch) => {
   localStorage.removeItem('jwtToken')
   setAuthToken(false)
   dispatch(setCurrentUser({}))
-  history.push('/login')
+  history.push('/')
 }

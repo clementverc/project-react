@@ -46,39 +46,47 @@ class HomePage extends Component {
       <div>
         <div className="container">
           <div className="row">
-            <div className="col-2">
-              <select>
-                <option value="grapefruit">Grapefruit</option>
-                <option value="lime">Lime</option>
-                <option selected value="coconut">Coconut</option>
-                <option value="mango">Mango</option>
-              </select>
-              <select>
-                <option value="grapefruit">Grapefruit</option>
-                <option value="lime">Lime</option>
-                <option selected value="coconut">Coconut</option>
-                <option value="mango">Mango</option>
-              </select>
-              <select>
-                <option value="grapefruit">Grapefruit</option>
-                <option value="lime">Lime</option>
-                <option selected value="coconut">Coconut</option>
-                <option value="mango">Mango</option>
-              </select>
-              <select>
-                <option value="grapefruit">Grapefruit</option>
-                <option value="lime">Lime</option>
-                <option selected value="coconut">Coconut</option>
-                <option value="mango">Mango</option>
-              </select>
-              <select>
-                <option value="grapefruit">Grapefruit</option>
-                <option value="lime">Lime</option>
-                <option selected value="coconut">Coconut</option>
-                <option value="mango">Mango</option>
-              </select>
+            <div className="col-3">
+              <div className="row">
+                <select className="Builder">
+                  <option value="HONDA">HONDA</option>
+                  <option value="SUZUKI">SUZUKI</option>
+                  <option value="KAWASAKI">KAWASAKI</option>
+                  <option value="DUCATI">DUCATI</option>
+                </select>
+              </div>
+              <div className="row">
+                <select className="Category">
+                  <option value="Sportive">Sportive</option>
+                  <option value="Roadster">Roadster</option>
+                  <option value="Trail">Trail</option>
+                  <option value="Gt">Gt</option>
+                </select>
+              </div>
+              <div className="row">
+                <select className="Guidon">
+                  <option value="GuidonDroit">Guidon droit</option>
+                  <option value="GuidonBracelet">Guidon Bracelets</option>
+                  <option value="GuidonCustom">Guidon Custom</option>
+                  <option value="GuidonPlat">Guidon Plat</option>
+                  <option value="GuidonRoadster">Guidon Roadster</option>
+                  <option value="GuidonCross">Guidon Cross</option>
+                  <option value="NoGuidon">Pas de Guidon</option>
+                </select>
+              </div>
+              <div className="row">
+                <select className="Permis">
+                  <option value="A">A</option>
+                  <option value="A2">A2</option>
+                  <option value="A1">A1</option>
+                  <option value="AM">AM</option>
+                </select>
+              </div>
+              <button type="submit" className="btn btn-primary">
+                Rechercher
+              </button>
             </div>
-            <div className="col-8">
+            <div className="col-9">
               <Article data={data} />
             </div>
           </div>

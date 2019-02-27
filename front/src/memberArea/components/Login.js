@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 // import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import classnames from 'classnames'
@@ -84,6 +85,7 @@ class Login extends Component {
             <button type="submit" className="btn btn-primary">
               Login User
             </button>
+            <Link className="nav-link" to="/register">Pas de compte ? clique ici !</Link>
           </div>
         </form>
       </div>

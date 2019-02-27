@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const passport = require('passport')
 const config = require('./db')
+const cors = require('cors')
 
 const users = require('./routes/user') 
 
@@ -12,6 +13,7 @@ mongoose.connect(config.DB, { useNewUrlParser: true }).then(
 )
 
 const app = express()
+app.use(cors())
 app.use(passport.initialize())
 require('./passport')(passport)
 
@@ -20,9 +22,9 @@ app.use(bodyParser.json())
 
 app.use('/api/users', users)
 
-app.get('/', function(req, res) {
-    res.send('hello')
-})
+// app.get('/', function(req, res) {
+//     res.send('hello')
+// })
 
 const PORT = process.env.PORT || 8080
 
