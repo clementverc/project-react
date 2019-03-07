@@ -31,13 +31,56 @@ class ModeleForm extends Component {
                 />
               </div>
             </div>
+            <h1>Informations Générales :</h1>
+            <div className="row col-12">
+              <div className="form-group col-md-4">
+                <input
+                  type="text"
+                  className={classnames('form-control form-control-lg')}
+                  field="name"
+                  placeholder="Nom du Modele"
+                />
+              </div>
+              <div className="form-group col-md-4">
+                <input
+                  type="text"
+                  className={classnames('form-control form-control-lg')}
+                  field="constructeur"
+                  placeholder="Constructeur"
+                />
+              </div>
+              <div className="form-group col-md-4">
+                <input
+                  type="text"
+                  className={classnames('form-control form-control-lg')}
+                  field="categorie"
+                  placeholder="Categorie(es)"
+                />
+              </div>
+              <div className="form-group col-md-4">
+                <input
+                  type="text"
+                  className={classnames('form-control form-control-lg')}
+                  field="permis"
+                  placeholder="Permis"
+                />
+              </div>
+              <div className="form-group col-md-4">
+                <input
+                  type="text"
+                  className={classnames('form-control form-control-lg')}
+                  field="cylindree"
+                  placeholder="Cylindree"
+                />
+              </div>
+            </div>
             <h1>Moteur :</h1>
             <div className="row col-12">
               <div className="form-group col-md-4">
                 <input
                   type="text"
                   className={classnames('form-control form-control-lg')}
-                  field="Distribution"
+                  field="distribution"
                   placeholder="Distribution"
                 />
               </div>
@@ -45,7 +88,7 @@ class ModeleForm extends Component {
                 <input
                   type="text"
                   className={classnames('form-control form-control-lg')}
-                  field="Refroidissement"
+                  field="refroidissement"
                   placeholder="Refroidissement"
                 />
               </div>
@@ -53,7 +96,7 @@ class ModeleForm extends Component {
                 <input
                   type="text"
                   className={classnames('form-control form-control-lg')}
-                  field="TypeMoteur"
+                  field="typeMoteur"
                   placeholder="TypeMoteur"
                 />
               </div>
@@ -61,24 +104,8 @@ class ModeleForm extends Component {
                 <input
                   type="text"
                   className={classnames('form-control form-control-lg')}
-                  field="inputCylindree"
-                  placeholder="inputCylindree"
-                />
-              </div>
-              <div className="form-group col-md-4">
-                <input
-                  type="text"
-                  className={classnames('form-control form-control-lg')}
-                  field="inputCouple"
-                  placeholder="inputCouple"
-                />
-              </div>
-              <div className="form-group col-md-4">
-                <input
-                  type="text"
-                  className={classnames('form-control form-control-lg')}
-                  field="inputPuissance"
-                  placeholder="inputPuissance"
+                  field="puissance"
+                  placeholder="Puissance"
                 />
               </div>
             </div>
@@ -88,7 +115,7 @@ class ModeleForm extends Component {
                 <input
                   type="text"
                   className={classnames('form-control form-control-lg')}
-                  field="Longueur"
+                  field="longueur"
                   placeholder="Longueur"
                 />
               </div>
@@ -96,75 +123,16 @@ class ModeleForm extends Component {
                 <input
                   type="text"
                   className={classnames('form-control form-control-lg')}
-                  field="inputLargeur"
-                  placeholder="inputLargeur"
+                  field="largeur"
+                  placeholder="Largeur"
                 />
               </div>
               <div className="form-group col-md-4">
                 <input
                   type="text"
                   className={classnames('form-control form-control-lg')}
-                  field="inputBoiteVitesse"
-                  placeholder="inputBoiteVitesse"
-                />
-              </div>
-              <div className="form-group col-md-4">
-                <input
-                  type="text"
-                  className={classnames('form-control form-control-lg')}
-                  field="inputEmpattement"
-                  placeholder="inputEmpattement"
-                />
-              </div>
-              <div className="form-group col-md-4">
-                <input
-                  type="text"
-                  className={classnames('form-control form-control-lg')}
-                  field="inputHauteurSelle"
-                  placeholder="inputHauteurSelle"
-                />
-              </div>
-              <div className="form-group col-md-4">
-                <input
-                  type="text"
-                  className={classnames('form-control form-control-lg')}
-                  field="inputPoid"
-                  placeholder="inputPoid"
-                />
-              </div>
-              <div className="form-group col-md-4">
-                <input
-                  type="text"
-                  className={classnames('form-control form-control-lg')}
-                  field="inputReservoir"
-                  placeholder="inputReservoir"
-                />
-              </div>
-            </div>
-            <h1>Transmission​ :</h1>
-            <div className="row col-12">
-              <div className="form-group col-md-4">
-                <input
-                  type="text"
-                  className={classnames('form-control form-control-lg')}
-                  field="inputEmbrayage"
-                  placeholder="inputEmbrayage"
-                />
-              </div>
-              <div className="form-group col-md-4">
-                <input
-                  type="text"
-                  className={classnames('form-control form-control-lg')}
-                  field="inputBoiteVitesse"
-                  placeholder="inputBoiteVitesse"
-                />
-              </div>
-              <div className="form-group col-md-4">
-                <input
-                  type="text"
-                  className={classnames('form-control form-control-lg')}
-                  field="inputTransmissionFinale"
-                  placeholder="inputTransmissionFinale"
+                  field="poid"
+                  placeholder="Poid"
                 />
               </div>
             </div>

@@ -1,13 +1,25 @@
 import { createStore, applyMiddleware, compose } from 'redux'
 import thunk from 'redux-thunk'
-import rootReducer from './memberArea/reducers'
+import { createLogger } from 'redux-logger'
 
-const inititalState = {}
+import reducers from './reducers'
 
-const store = createStore(
-  rootReducer,
-  inititalState,
-  compose(applyMiddleware(thunk))
-)
+const productMode = (env) => {
+  if (env !== 'production') {
+    return createStore(
+      reducers,
+      compose(
+        applyMiddleware(thunk),
+        applyMiddleware(createLogger()),
+        window.devToolsExtension && window.devToolsExtension()
+      )
+    )
+  }
 
-export default store
+  return createStore(
+    reducers,
+    compose(applyMiddleware(thunk))
+  )
+}
+
+export default productMode(process.env.NODE_ENV)

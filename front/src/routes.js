@@ -6,13 +6,12 @@ import Permis from './permis'
 import FaqPropos from './faq_propos'
 import Header from './header'
 import Footer from './footer'
-// import Search from './search'
+import Details from './details'
 import SimpleForm from './contact'
 import ModeleForm from './contact/modeleForm'
 import Login from './memberArea/components/login'
 import Register from './memberArea/components/Register'
 import MemberSpace from './memberArea/components/index'
-import Test from './HomePage/components/test'
 
 class Routes extends Component {
   render() {
@@ -31,7 +30,7 @@ class Routes extends Component {
               <Route path="/register" component={Register} exact />
               <Route path="/login" component={Login} exact />
               <Route path="/memberSpace" component={MemberSpace} exact />
-              <Route path="/test" component={Test} exact />
+              <Route path="/details" component={Details} exact />
             </Switch>
             <Footer />
           </div>
