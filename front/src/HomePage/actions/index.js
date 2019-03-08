@@ -25,6 +25,10 @@ const formatEvents = events => (
 
 export const setData = () => {
   store.dispatch(newData(formatEvents(moto.modeles)))
-  return formatEvents(moto.modeles)
+  // return formatEvents(moto.modeles)
 }
+
+export const bla = () => (
+  formatEvents(moto.modeles)
+)
 

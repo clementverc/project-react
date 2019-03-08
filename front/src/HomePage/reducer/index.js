@@ -11,7 +11,7 @@ const newData = (state, action) => (
 
 const homePage = (state = initialState, action) => {
   switch (action.type) {
-    case actionsType.NEWDATA:
+    case actionsType.NEW_DATA:
       return newData(state, action)
     default:
       return state

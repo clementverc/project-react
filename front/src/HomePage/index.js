@@ -4,7 +4,7 @@ import Select from 'react-select'
 
 import initialState from './reducer/initial-state'
 import Article from './components/article'
-import { setData } from './actions'
+import { bla } from './actions'
 
 class HomePage extends Component {
   constructor() {
@@ -14,7 +14,7 @@ class HomePage extends Component {
   }
 
   render() {
-    const data = setData()
+    const data = bla()
 
     const constructors = [
       { label: 'HONDA', value: 1 },
