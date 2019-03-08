@@ -19,7 +19,15 @@ const formatEvents = events => (
     categorie: event.categorie,
     permis: event.permis,
     cylindree: event.cylindree,
-    constructeur: event.constructeur
+    constructeur: event.constructeur,
+    distribution: event.distribution,
+    refroidissement: event.refroidissement,
+    typeMoteur: event.typeMoteur,
+    puissance: event.puissance,
+    longeur: event.longeur,
+    largeur: event.largeur,
+    poid: event.poid,
+    guidon: event.guidon
   }))
 )
 
