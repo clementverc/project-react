@@ -3,10 +3,8 @@ import ReactDOM from 'react-dom'
 import React from 'react'
 import { Provider } from 'react-redux'
 import jwt_decode from 'jwt-decode'
+import { setAuthToken, setCurrentUser, logoutUser } from './memberArea/actions'
 import store from './store'
-import registerServiceWorker from './registerServiceWorker'
-import setAuthToken from './setAuthToken'
-import { setCurrentUser, logoutUser } from './memberArea/actions/authentication'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
@@ -26,7 +24,6 @@ if (localStorage.jwtToken) {
     window.location.href = '/login'
   }
 }
-
 const Index = () => (
   <Provider store={store}>
     <div>
@@ -36,4 +33,3 @@ const Index = () => (
 )
 
 ReactDOM.render(<Index />, document.getElementById('index'))
-registerServiceWorker()

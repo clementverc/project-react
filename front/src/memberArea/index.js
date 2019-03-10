@@ -1,25 +1,7 @@
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 
 class MemberSpace extends Component {
-  // $(".tab_content:first").show();
-  // /* if in tab mode */
-  //   $("ul.tabs li").click(function() {
-  //     $(".tab_content").hide()
-  //     var activeTab = $(this).attr("rel")
-  //     $("#"+activeTab).fadeIn()
-  //     $("ul.tabs li").removeClass("active")
-  //     $(this).addClass("active")
-  //   })
-
-  tab1OnClick() {
-  }
-
-  tab2OnClick() {
-    console.log('tab2clicked !')
-  }
-
   render() {
     const { user } = this.props.auth
 
@@ -28,7 +10,7 @@ class MemberSpace extends Component {
         <div className="row justify-content-center">
           <div className="col-12">
             <h4>Espace Personnel</h4>
-            <p>Ici se trouve votre Espace personnel. Vous pouvez modifier vos informations comme bon vous semble (ou supprimer votre compte).</p>
+            <p>Ici se trouvera votre Espace personnel. Vous pourrez modifier vos informations comme bon vous semble (ou supprimer votre compte).</p>
             <p>Cette partie du site est en cours de création est verra bientot le jours. </p>
           </div>
         </div>
@@ -39,8 +21,16 @@ class MemberSpace extends Component {
           </ul>
           <div className="tab_container">
             <div id="tab1" className="">
-              <h2>Tab 1 content</h2>
-              <p>{user.name}</p>
+              <p>
+                <img
+                  src={user.avatar}
+                  alt={user.name}
+                  title={user.name}
+                  className="rounded-circle"
+                  style={{ width: '25px', marginRight: '5px' }}
+                />
+                {user.name}
+              </p>
               <p>{user.email}</p>
             </div>
             <div id="tab2" className="tab_content">
@@ -57,4 +47,4 @@ const mapStateToProps = state => ({
   auth: state.auth
 })
 
-export default connect(mapStateToProps)(withRouter(MemberSpace))
+export default connect(mapStateToProps)(MemberSpace)

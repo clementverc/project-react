@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { bla } from '../HomePage/actions'
+import { modeles } from '../actions'
 
 class Details extends Component {
   render() {
     const { detail } = this.props.location.state
-    const troll = bla()
-    const data = troll[detail - 1]
+    const modeleSelected = modeles()
+    const data = modeleSelected[detail - 1]
     console.log(data)
 
     return (

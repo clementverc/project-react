@@ -16,37 +16,33 @@ class Article extends Component {
         <table className="table table-hover">
           <thead>
             <tr>
-              <th>id</th>
-              <th>name</th>
-              <th>permis</th>
-              <th>constructeur</th>
-              <th>cylindree</th>
-              <th>categorie</th>
+              <th scope="col">Modèle</th>
+              <th scope="col">permis</th>
+              <th scope="col">constructeur</th>
+              <th scope="col">cylindree</th>
+              <th scope="col">categorie</th>
             </tr>
           </thead>
           <tbody>
             {data.map(item => (
               <tr key={item.id}>
-                <Link to={{ pathname: '/details', state: { detail: item.id } }}>
-                  <td>
-                    {`${item.id}`}
-                  </td>
-                  <td>
+                <td>
+                  <Link to={{ pathname: '/details', state: { detail: item.id } }}>
                     {`${item.name}`}
-                  </td>
-                  <td>
-                    {`${item.permis}`}
-                  </td>
-                  <td>
-                    {`${item.constructeur}`}
-                  </td>
-                  <td>
-                    {`${item.cylindree}`}
-                  </td>
-                  <td>
-                    {`${item.categorie}`}
-                  </td>
-                </Link>
+                  </Link>
+                </td>
+                <td>
+                  {`${item.permis}`}
+                </td>
+                <td>
+                  {`${item.constructeur}`}
+                </td>
+                <td>
+                  {`${item.cylindree}`}
+                </td>
+                <td>
+                  {`${item.categorie}`}
+                </td>
               </tr>
             ))
           }

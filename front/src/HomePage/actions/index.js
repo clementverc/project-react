@@ -36,7 +36,7 @@ export const setData = () => {
   // return formatEvents(moto.modeles)
 }
 
-export const bla = () => (
+export const modeles = () => (
   formatEvents(moto.modeles)
 )
 

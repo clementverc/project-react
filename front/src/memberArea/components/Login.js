@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-// import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import classnames from 'classnames'
-import { loginUser } from '../actions/authentication'
+import { loginUser } from '../actions'
 
 class Login extends Component {
   constructor() {
@@ -92,12 +91,6 @@ class Login extends Component {
     )
   }
 }
-
-// Login.propTypes = {
-//   loginUser: PropTypes.func.isRequired,
-//   auth: PropTypes.object.isRequired,
-//   errors: PropTypes.object.isRequired
-// }
 
 const mapStateToProps = state => ({
   auth: state.auth,
