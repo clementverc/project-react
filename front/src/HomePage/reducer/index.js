@@ -8,11 +8,18 @@ const newData = (state, action) => (
     .setIn(['data'], action.data)
     .toJS()
 )
+const searchModeles = (state, action) => (
+  fromJS(state)
+    .setIn(['dataSearch'], action.dataSearch)
+    .toJS()
+)
 
 const homePage = (state = initialState, action) => {
   switch (action.type) {
-    case actionsType.NEW_DATA:
+    case actionsType.DATA:
       return newData(state, action)
+    case actionsType.SEARCH_MODELES:
+      return searchModeles(state, action)
     default:
       return state
   }

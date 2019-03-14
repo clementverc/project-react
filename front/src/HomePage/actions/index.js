@@ -2,11 +2,6 @@ import actionsType from './actions-type'
 import store from '../../store'
 import moto from '../../mock/moto.json'
 
-const newData = data => ({
-  type: actionsType.NEW_DATA,
-  data
-})
-
 /**
    * Format events
    * @param {Array} events
@@ -31,12 +26,39 @@ const formatEvents = events => (
   }))
 )
 
+const newData = data => ({
+  type: actionsType.DATA,
+  data
+})
+
 export const setData = () => {
   store.dispatch(newData(formatEvents(moto.modeles)))
-  // return formatEvents(moto.modeles)
 }
 
 export const modeles = () => (
   formatEvents(moto.modeles)
 )
 
+export const searchModeles = dataSearch => ({
+  type: actionsType.SEARCH_MODELES,
+  dataSearch
+})
+
+// tabType c les nom des key (name,permis ect)
+// tabValue c les nom des vleur (A2 ect)
+// tu doit avoir l'import de ton mock (je l'appelle mock)
+export const setSearchData = (tabType, tabValue) => {
+  const tabStock = []
+  moto.modeles.map(() => {
+    let cpt = 0
+    Object.keys(tabType).map((el) => {
+      if (el[tabType[cpt]] === tabValue[cpt]) {
+        tabStock.push(el)
+      }
+      cpt += 1
+      return true
+    })
+    return true
+  })
+  store.dispatch(searchModeles(tabStock))
+}

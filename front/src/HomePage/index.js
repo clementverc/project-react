@@ -4,7 +4,7 @@ import Select from 'react-select'
 
 import initialState from './reducer/initial-state'
 import Article from './components/article'
-import { modeles } from './actions'
+import { modeles, setSearchData } from './actions'
 
 class HomePage extends Component {
   constructor() {
@@ -13,8 +13,14 @@ class HomePage extends Component {
     this.state = initialState
   }
 
+  handleSubmit(e, dataSearch) {
+    e.preventDefault()
+    setSearchData(dataSearch)
+  }
+
   render() {
     const data = modeles()
+    const { dataSearch } = this.props
 
     const constructors = [
       { label: 'HONDA', value: 1 },
@@ -53,9 +59,7 @@ class HomePage extends Component {
               <Select options={category} isMulti />
               <Select options={permis} isMulti />
               <Select options={guidon} isMulti />
-              <button type="submit" className="btn btn-primary">
-                Rechercher
-              </button>
+              <input type="submit" className="btn btn-primary" value="Submit" onClick={e => this.handleSubmit(e, dataSearch)} />
             </div>
             <div className="col-lg-9 col-s-12">
               <Article data={data} />

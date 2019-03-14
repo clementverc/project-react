@@ -1,3 +1,4 @@
 export default {
-  NEW_DATA: 'NEW_DATA'
+  DATA: 'DATA',
+  SEARCH_MODELES: 'SEARCH_MODELES'
 }
