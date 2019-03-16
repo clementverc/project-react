@@ -2,15 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 class Article extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      data: props.data
-    }
-  }
-
   render() {
-    const { data } = this.state
+    const { data } = this.props
     return (
       <div>
         <table className="table table-hover">

@@ -1,29 +1,34 @@
-import React, { Component } from 'react'
-import { modeles } from '../actions'
+import { Component } from 'react'
+import { connect } from 'react-redux'
 
 class Details extends Component {
   render() {
     const { detail } = this.props.location.state
-    const modeleSelected = modeles()
-    const data = modeleSelected[detail - 1]
-    console.log(data)
+    const { data } = this.props
 
-    return (
-      <div className="text-center">
-        <p>Nom du modèle : {data.name}({data.cylindree} cc).</p>
-        <p>Crée par : {data.constructeur}.</p>
-        <p>Disponible pour les permis : {data.permis}.</p>
-        <p>Ce modèle correspond à la categorie {data.categorie} et pèse {data.poid}.</p>
-        <p>Type de guidon : {data.guidon}</p>
-        <p>Distribution à {data.distribution}.</p>
-        <p>Modèle à refroidissement {data.refroidissement}.</p>
-        <p>Puissance : {data.puissance} ch.</p>
-        <p> {data.typeMoteur}.</p>
-        <p>Longueur : {data.longeur} cm.</p>
-        <p>Largeur : {data.largeur} cm.</p>
-      </div>
-    )
+    let dom = ''
+
+    data.map((vehicule) => {
+      if (detail === vehicule.id) {
+        dom = `Le modèle : ${vehicule.name} (${vehicule.cylindree} cc)
+          Crée par ${vehicule.constructeur} peut etre conduit avec un permis
+           ${vehicule.permis} puisqu'il a une puissance de ${vehicule.puissance} ch.
+          Ce modèle correspond à la categorie ${vehicule.categorie} et pèse ${vehicule.poid}.
+          Il est équipé d'un type de guidon : ${vehicule.guidon} et d'une 
+          distribution à ${vehicule.distribution}.
+          Il s'agit d'un modèle à refroidissement ${vehicule.refroidissement}.
+          Il mesure ${vehicule.longeur} cm de longueur et ${vehicule.largeur} cm de large.`
+      }
+      return ''
+    })
+    return dom
   }
 }
 
-export default Details
+const mapStateToProps = state => (
+  {
+    data: state.homePage.data
+  }
+)
+
+export default connect(mapStateToProps)(Details)

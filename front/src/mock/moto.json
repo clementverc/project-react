@@ -3,9 +3,9 @@
         {
             "id": "1",
             "name": "CBR500R",
-            "constructeur":"Honda",
-            "cylindree": "500",
+            "constructeur":"HONDA",
             "categorie": "Sportive",
+            "cylindree": "500",
             "permis":"A2",
             "distribution":"Chaine",
             "refroidissement":"liquide",
@@ -14,12 +14,12 @@
             "longeur":"1",
             "largeur":"25",
             "poid":"201",
-            "guidon":"Guidon Bracelets"
+            "guidon":"Guidon Roadster"
         },
         {
             "id": "2",
             "name": "CBR600R",
-            "constructeur":"Honda",
+            "constructeur":"HONDA",
             "cylindree": "600",
             "categorie": "Sportive",
             "permis":"A2",
@@ -35,7 +35,7 @@
         {
             "id": "3",
             "name": "CBR650R",
-            "constructeur":"Honda",
+            "constructeur":"HONDA",
             "cylindree": "650",
             "categorie": "Sportive",
             "permis":"A",
@@ -51,7 +51,7 @@
         {
             "id": "4",
             "name": "CBR1000R",
-            "constructeur":"Honda",
+            "constructeur":"HONDA",
             "cylindree": "1000",
             "categorie": "Sportive",
             "permis":"A2",
@@ -126,7 +126,7 @@
             "longeur":"Non renseignée",
             "largeur":"Non renseignée",
             "poid":"Non renseignée",
-            "guidon":"Guidon Roadster"
+            "guidon":"Pas de Guidon"
         },
         {
             "id": "9",
