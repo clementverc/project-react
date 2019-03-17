@@ -22,6 +22,9 @@ class HomePage extends Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-s-12">
+              <div className="row">
+                <h1>Filtrer :</h1>
+              </div>
               <SelectFields />
               <input type="submit" className="btn btn-primary" value="Submit" onClick={this.onChangeSelect} />
             </div>

@@ -149,8 +149,8 @@
             "name": "SV650",
             "constructeur":"SUZUKI",
             "cylindree": "650",
-            "categorie": "Roadster",
-            "permis":"A",
+            "categorie": "Sportive",
+            "permis":"A2",
             "distribution":"Non renseignée",
             "refroidissement":"Non renseignée",
             "typeMoteur":"Bi cylindre en V",
@@ -158,7 +158,7 @@
             "longeur":"Non renseignée",
             "largeur":"Non renseignée",
             "poid":"212",
-            "guidon":"Pas de Guidon"
+            "guidon":"Guidon Bracelets"
         }
     ]
 }

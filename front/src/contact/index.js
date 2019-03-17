@@ -9,7 +9,7 @@ const SimpleForm = () => (
     submitForm
   }) => (
     <div className="container" style={{ marginTop: '50px', width: '700px' }}>
-      <h2 style={{ marginBottom: '40px' }}>Contact Nous !</h2>
+      <h2 style={{ marginBottom: '40px' }}>Contacte Nous !</h2>
       <form onSubmit={submitForm}>
         <div className="form-group">
           <input
